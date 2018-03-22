@@ -5,3 +5,24 @@ html {
 fieldset {
   border: none;
 }
+
+header,
+footer {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+hr {
+  border-color: #70ad55;
+}
+
+input,
+select,
+textarea {
+  border-color: #6e8c62;
+}
+
+
+span {
+  color: #70ad55;
+}

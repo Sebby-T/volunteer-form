@@ -13,28 +13,30 @@
 <body>
   <section>
     <header>
-      <h1>Apply to be a tree planter</h1>
-      <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+      <div class="max-length">
+        <h1>Apply to be a tree planter</h1>
+        <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+      </div>
     </header>
-    <form method="POST" action="https://formspree.io/turn0213@algonquinlive.com">
+    <form class="max-length" method="POST" action="https://formspree.io/turn0213@algonquinlive.com">
       <fieldset>
         <legend>Personal details</legend>
-        <div class="">
-          <div class="">
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <label for="name">Full name</label>
             <input id="name" type="text" name="name" required>
             <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
           </div>
-          <div class="">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <label for="nick-name">What should we call you?</label>
             <input id="nick-name" type="text" name="nick-name" required>
             <p>What all your friends call you, e.g. “Liz”.</p>
           </div>
-          <div class="">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <label for="birth-date">Date of birth</label>
             <input id="birth-date" type="date" name="birth-date" required>
           </div>
-          <div class="">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <label for="size">T-shirt size</label>
             <select id="size" name="t-shirt-size">
               <option value="">Select a t-shirt size</option>
@@ -50,11 +52,11 @@
               <option>Straight-cut: XL</option>
             </select>
           </div>
-          <div class="">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <label for="email">Email</label>
             <input id="email" type="email" name="email" required>
           </div>
-          <div class="">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <label for="phone-number">Phone number <span>(optional)</span></label>
             <input id="phone-number" type="tel" name="phone-number">
           </div>
@@ -63,43 +65,45 @@
       <hr>
       <fieldset>
         <legend>Address</legend>
-        <div class="">
-          <label for="address">Street address</label>
-          <input id="address" type="text" name="address">
-        </div>
-        <div class="">
-          <label for="city">City</label>
-          <input id="city" type="text" name="city">
-        </div>
-        <div class="">
-          <label for="province">Province</label>
-          <select id="province" name="province">
-            <option value="">Select a province</option>
-            <option>Alberta</option>
-            <option>British Columbia</option>
-            <option>Manitoba</option>
-            <option>New Brunswick</option>
-            <option>Newfoundland & Labrador</option>
-            <option>Northwest Territories</option>
-            <option>Nova Scotia</option>
-            <option>Nunavut</option>
-            <option>Ontario</option>
-            <option>Prince Edward Island</option>
-            <option>Québec</option>
-            <option>Saskatchewan</option>
-            <option>Yukon</option>
-          </select>
-        </div>
-        <div class="">
-          <label for="postal-code">Postal code</label>
-          <input id="postal-code" minlength="6" type="text" name="postal-code">
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <label for="address">Street address</label>
+            <input id="address" type="text" name="address">
+          </div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <label for="city">City</label>
+            <input id="city" type="text" name="city">
+          </div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <label for="province">Province</label>
+            <select id="province" name="province">
+              <option value="">Select a province</option>
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland & Labrador</option>
+              <option>Northwest Territories</option>
+              <option>Nova Scotia</option>
+              <option>Nunavut</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Québec</option>
+              <option>Saskatchewan</option>
+              <option>Yukon</option>
+            </select>
+          </div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <label for="postal-code">Postal code</label>
+            <input id="postal-code" minlength="6" type="text" name="postal-code">
+          </div>
         </div>
       </fieldset>
       <hr>
       <fieldset>
         <legend>What activities are you interested in helping with?</legend>
-        <div>
-          <div>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <div>
               <input type="checkbox" id="digging-holes" name="activies">
               <label for="digging-holes">Digging holes</label>
@@ -117,7 +121,7 @@
               <label for="driving-people">Driving people</label>
             </div>
           </div>
-          <div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <div>
               <input type="checkbox" id="transport-trees" name="activies">
               <label for="transport-trees">Transporting trees</label>
@@ -139,8 +143,8 @@
       </fieldset>
       <fieldset>
         <legend>Do you have any experience with the following?</legend>
-        <div>
-          <div>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <div>
               <input type="checkbox" id="shovels" name="experience">
               <label for="shovels">Shovels</label>
@@ -162,7 +166,7 @@
               <label for="climbing">Trail & hill climbing</label>
             </div>
           </div>
-          <div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
             <div>
               <input type="checkbox" id="craft" name="experience">
               <label for="craft">Bush craft</label>
@@ -210,15 +214,16 @@
       </fieldset>
       <hr>
       <div>
-        <label for="message">Please let us know any comments or questions you may have.</label>
+        <label for="message">Please let us know any comments or questions you may have. <span>(optinal)</span></label>
         <textarea id="message"></textarea>
       </div>
       <hr>
       <div class="">
         <button class="" type="submit">Apply</button>
       </div>
+      <input type="hidden" name="_subject" value="Volunteer Sign-up">
     </form>
-    <footer><small>© Tree Hugger International Organization</small></footer>
+    <footer><small class="max-length">© Tree Hugger International Organization</small></footer>
   </section>
 </body>
 </html>
