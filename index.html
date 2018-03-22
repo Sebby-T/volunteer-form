@@ -16,28 +16,28 @@
       <h1>Apply to be a tree planter</h1>
       <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
     </header>
-    <form>
+    <form method="POST" action="https://formspree.io/turn0213@algonquinlive.com">
       <fieldset>
         <legend>Personal details</legend>
         <div class="">
           <div class="">
             <label for="name">Full name</label>
-            <input id="name" type="text" name="" required>
+            <input id="name" type="text" name="name" required>
             <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
           </div>
           <div class="">
             <label for="nick-name">What should we call you?</label>
-            <input id="nick-name" type="text" name="" required>
+            <input id="nick-name" type="text" name="nick-name" required>
             <p>What all your friends call you, e.g. “Liz”.</p>
           </div>
           <div class="">
             <label for="birth-date">Date of birth</label>
-            <input id="birth-date" type="text" name="" required>
+            <input id="birth-date" type="date" name="birth-date" required>
           </div>
           <div class="">
             <label for="size">T-shirt size</label>
-            <select id="size" name="" value="Select a t-shirt size" required>
-              <option>Select a t-shirt size</option>
+            <select id="size" name="t-shirt-size">
+              <option value="">Select a t-shirt size</option>
               <option>Fitted: XS</option>
               <option>Fitted: S</option>
               <option>Fitted: M</option>
@@ -52,28 +52,29 @@
           </div>
           <div class="">
             <label for="email">Email</label>
-            <input id="email" type="text" name="" required>
+            <input id="email" type="email" name="email" required>
           </div>
           <div class="">
             <label for="phone-number">Phone number <span>(optional)</span></label>
-            <input id="phone-number" type="text" name="">
+            <input id="phone-number" type="tel" name="phone-number">
           </div>
         </div>
       </fieldset>
+      <hr>
       <fieldset>
         <legend>Address</legend>
         <div class="">
           <label for="address">Street address</label>
-          <input id="address" type="text" name="">
+          <input id="address" type="text" name="address">
         </div>
         <div class="">
           <label for="city">City</label>
-          <input id="city" type="text" name="">
+          <input id="city" type="text" name="city">
         </div>
         <div class="">
           <label for="province">Province</label>
-          <select id="province" name="" value="Select a province" required>
-            <option>Select a province</option>
+          <select id="province" name="province">
+            <option value="">Select a province</option>
             <option>Alberta</option>
             <option>British Columbia</option>
             <option>Manitoba</option>
@@ -91,9 +92,10 @@
         </div>
         <div class="">
           <label for="postal-code">Postal code</label>
-          <input id="postal-code" type="text" name="">
+          <input id="postal-code" minlength="6" type="text" name="postal-code">
         </div>
       </fieldset>
+      <hr>
       <fieldset>
         <legend>What activities are you interested in helping with?</legend>
         <div>
@@ -184,31 +186,34 @@
           </div>
         </div>
       </fieldset>
+      <hr>
       <fieldset>
         <legend>Do you have a valid driver’s license?</legend>
-        <input type="radio" id="yes" name="question-1">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="question-1">
-        <label for="no">No</label>
+        <input type="radio" id="yes-1" name="question-1">
+        <label for="yes-1">Yes</label>
+        <input type="radio" id="no-1" name="question-1">
+        <label for="no-1">No</label>
       </fieldset>
       <fieldset>
         <legend>Do you have a pick-up truck you’d be willing to use?</legend>
-        <input type="radio" id="yes" name="question-2">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="question-2">
-        <label for="no">No</label>
+        <input type="radio" id="yes-2" name="question-2">
+        <label for="yes-2">Yes</label>
+        <input type="radio" id="no-2" name="question-2">
+        <label for="no-2">No</label>
       </fieldset>
       <fieldset>
         <legend>Do you have up-to-date first-aid certification?</legend>
-        <input type="radio" id="yes" name="question-3">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="question-3">
-        <label for="no">No</label>
+        <input type="radio" id="yes-3" name="question-3">
+        <label for="yes-3">Yes</label>
+        <input type="radio" id="no-3" name="question-3">
+        <label for="no-3">No</label>
       </fieldset>
+      <hr>
       <div>
         <label for="message">Please let us know any comments or questions you may have.</label>
-        <input id="message" type="text" name="">
+        <textarea id="message"></textarea>
       </div>
+      <hr>
       <div class="">
         <button class="" type="submit">Apply</button>
       </div>
