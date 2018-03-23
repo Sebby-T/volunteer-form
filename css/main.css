@@ -7,13 +7,13 @@ fieldset {
 }
 
 header,
-footer {
+.footer {
   background-color: #70ad55;
   color: #fff;
 }
 
 hr {
-  border-color: #70ad55;
+  border-color: rgba(112, 173, 85, .3);
 }
 
 input,
@@ -22,7 +22,27 @@ textarea {
   border-color: #6e8c62;
 }
 
+textarea {
+  height: 10em;
+}
 
 span {
   color: #70ad55;
+}
+
+.btn {
+  background-color: #6e8c62;
+  border-color: #6e8c62;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .pad-l {
+    padding-left: .7rem;
+  }
+
+  .pad-r {
+    padding-right: .7rem;
+  }
+
 }
